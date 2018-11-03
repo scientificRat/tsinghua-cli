@@ -10,13 +10,15 @@
 * python>=3.5 (python>=2.7)
 * requests
 ### 安装
-
+```bash
+pip install git+https://github.com/scientificRat/tsinghua-cli.git
+```
 
 ### 使用说明  
 可用于 登陆/退出/查询 校园网登陆状态  
 
 ```bash
-usage: cli.py [-h] [--username USERNAME] [--password PASSWORD] action
+usage: tsinghua_cli [-h] [--username USERNAME] [--password PASSWORD] action
 
 Connection tool for Tsinghua
 
@@ -27,4 +29,10 @@ optional arguments:
   -h, --help            show this help message and exit
   --username USERNAME, -u USERNAME
   --password PASSWORD, -p PASSWORD
+``` 
+### demo
+```bash
+$ tsinghua_cli status
+$ tsinghua_cli login -u xxxx -p xxxxxx
+$ tsinghua_cli logout
 ```
